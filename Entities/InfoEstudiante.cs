@@ -38,8 +38,6 @@ namespace EjercicioTeso01.Entities
             set { direccionEstudiante = value; }
         }
 
-        public string Id { get; internal set; }
-
         public InfoEstudiante()
         {
         }
