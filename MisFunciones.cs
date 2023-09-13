@@ -1,3 +1,4 @@
+using System.Linq.Expressions;
 using EjercicioTeso01.Entities;
 using Newtonsoft.Json;
 
@@ -21,9 +22,12 @@ public class MisFunciones
                     Console.WriteLine("2. Ingresar Trabajos");
                     Console.WriteLine("3. Ingresar Parciales");
                     Console.WriteLine("4. Salir del Programa");
+                    Console.WriteLine(elemento);
                     int notasOpcion = Convert.ToInt32(Console.ReadLine());
                     if(notasOpcion != 4){
-                        InfoEstudiante.AñadirNota(elemento, notasOpcion);
+                        List<InfoEstudiante> lista = new List<InfoEstudiante>();
+                        lista.Add(elemento);
+                        InfoEstudiante.AñadirNota(lista, notasOpcion);
                     }
                     else{
                         banderita = false;

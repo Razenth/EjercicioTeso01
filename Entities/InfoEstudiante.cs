@@ -89,18 +89,18 @@ public class InfoEstudiante : NotasEstudiante
         listaEstudiantes.Add(estudiante);
         }
 
-        public void AñadirNota(List<Estudiante> estudiantes, int opcion)
+        public static void AñadirNota(List<InfoEstudiante> estudiantes, int opcion)
         {
             Console.WriteLine("Ingrese el codigo del estudiante: ");
             string studenCode = Console.ReadLine();
             // Estudiante alumno =  new Estudiante();
-            Estudiante alumno = estudiantes.FirstOrDefault(x => x.Code.Equals(studenCode));
+            InfoEstudiante alumno = estudiantes.FirstOrDefault(x => x.idEstudiante.Equals(studenCode));
             Console.WriteLine("Por favor ingrese la nota del : ");
             switch (opcion)
             {
                 case 1:
-                    Console.WriteLine("Quiz Nro : {0}", (alumno.Quices.Count + 1));
-                    alumno.Quices.Add(float.Parse(Console.ReadLine()));
+                    Console.WriteLine("Quiz Nro : {0}", (alumno.NotasQuices.Count + 1));
+                    alumno.NotasQuices.Add(float.Parse(Console.ReadLine()));
                     break;
                 case 2:
                     alumno.Trabajos.Add(float.Parse(Console.ReadLine()));
