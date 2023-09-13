@@ -2,30 +2,15 @@ namespace EjercicioTeso01.Entities
 {
     public class NotasEstudiante
     {
-
-        private string idEstudiante;
-        public string IdEstudiante
-        {
-            get { return idEstudiante; }
-            set { idEstudiante = value; }
-        }
         
-        private string nombreEstudiante;
-        public string NombreEstudiante
-        {
-            get { return nombreEstudiante; }
-            set { nombreEstudiante = value; }
-        }
-        
-        
-       private List<float> notasQuices = new List<float>(4);
+       List<float> notasQuices = new List<float>();
        public List<float> NotasQuices
        {
         get { return notasQuices; }
         set { notasQuices = value; }
        }
        
-       private List<float> notasTrabajos = new List<float>(2);
+       List<float> notasTrabajos = new List<float>();
        public List<float> NotasTrabajos
        {
         get { return notasTrabajos; }
@@ -33,7 +18,7 @@ namespace EjercicioTeso01.Entities
        }
        
 
-       private List<float> notasParciales = new List<float>(3);
+       List<float> notasParciales = new List<float>();
        public List<float> NotasParciales
        {
         get { return notasParciales; }
@@ -48,7 +33,5 @@ namespace EjercicioTeso01.Entities
             this.notasParciales=notasParciales;
             this.notasTrabajos = notasTrabajos;
         }
-
-
     }
 }

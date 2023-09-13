@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "QtbCDqwtOe6bwpHBiXJoqUtMtNVkn6Eu0lUD2YKGO340cutDX37TCXRmF3TWhItBaujtfdTA1+wxo/G54T39vA==",
+  "dgSpecHash": "qPEumc1sWmWwW7bYDhSR5IMrOuUcPToGXohQL3L54z1u9WBqlyW2E3UzH/tbhn9n7ZHf5y002Nl0ImzPcaDv+w==",
   "success": true,
   "projectFilePath": "C:\\Users\\APM02-039\\Documents\\SantiDocum\\.Net\\C#\\EjercicioTeso01\\EjercicioTeso01.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\APM02-039\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
