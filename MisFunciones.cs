@@ -10,6 +10,7 @@ public class MisFunciones
     {
         InfoEstudiante elemento = estudiantes.FirstOrDefault(x => x.IdEstudiante.Equals(codigo) || x.NombreEstudiante.Equals(codigo));{
             if(elemento != null){
+                int idx = estudiantes.FindIndex(p => p.IdEstudiante.Equals(codigo));
                 bool banderita = true;
                 Console.Clear();
                 do{
@@ -25,9 +26,8 @@ public class MisFunciones
                     Console.WriteLine(elemento);
                     int notasOpcion = Convert.ToInt32(Console.ReadLine());
                     if(notasOpcion != 4){
-                        List<InfoEstudiante> lista = new List<InfoEstudiante>();
-                        lista.Add(elemento);
-                        InfoEstudiante.AñadirNota(lista, notasOpcion);
+                        estudiantes[idx] = InfoEstudiante.AñadirNota(elemento, notasOpcion);
+                        
                     }
                     else{
                         banderita = false;

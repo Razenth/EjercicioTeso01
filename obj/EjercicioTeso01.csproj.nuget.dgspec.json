@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\APM02-039\\Documents\\SantiDocum\\.Net\\C#\\EjercicioTeso01\\EjercicioTeso01.csproj": {}
+    "c:\\Users\\APM02-039\\Documents\\SantiDocum\\.Net\\C#\\EjercicioTeso01\\EjercicioTeso01.csproj": {}
   },
   "projects": {
-    "C:\\Users\\APM02-039\\Documents\\SantiDocum\\.Net\\C#\\EjercicioTeso01\\EjercicioTeso01.csproj": {
+    "c:\\Users\\APM02-039\\Documents\\SantiDocum\\.Net\\C#\\EjercicioTeso01\\EjercicioTeso01.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\APM02-039\\Documents\\SantiDocum\\.Net\\C#\\EjercicioTeso01\\EjercicioTeso01.csproj",
+        "projectUniqueName": "c:\\Users\\APM02-039\\Documents\\SantiDocum\\.Net\\C#\\EjercicioTeso01\\EjercicioTeso01.csproj",
         "projectName": "EjercicioTeso01",
-        "projectPath": "C:\\Users\\APM02-039\\Documents\\SantiDocum\\.Net\\C#\\EjercicioTeso01\\EjercicioTeso01.csproj",
+        "projectPath": "c:\\Users\\APM02-039\\Documents\\SantiDocum\\.Net\\C#\\EjercicioTeso01\\EjercicioTeso01.csproj",
         "packagesPath": "C:\\Users\\APM02-039\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\APM02-039\\Documents\\SantiDocum\\.Net\\C#\\EjercicioTeso01\\obj\\",
+        "outputPath": "c:\\Users\\APM02-039\\Documents\\SantiDocum\\.Net\\C#\\EjercicioTeso01\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\APM02-039\\AppData\\Roaming\\NuGet\\NuGet.Config"

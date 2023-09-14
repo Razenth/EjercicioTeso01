@@ -89,12 +89,8 @@ public class InfoEstudiante : NotasEstudiante
         listaEstudiantes.Add(estudiante);
         }
 
-        public static void AñadirNota(List<InfoEstudiante> estudiantes, int opcion)
+        public static InfoEstudiante AñadirNota(InfoEstudiante alumno, int opcion)
         {
-            Console.WriteLine("Ingrese el codigo del estudiante: ");
-            string studenCode = Console.ReadLine();
-            // Estudiante alumno =  new Estudiante();
-            InfoEstudiante alumno = estudiantes.FirstOrDefault(x => x.idEstudiante.Equals(studenCode));
             Console.WriteLine("Por favor ingrese la nota del : ");
             switch (opcion)
             {
@@ -103,18 +99,18 @@ public class InfoEstudiante : NotasEstudiante
                     alumno.NotasQuices.Add(float.Parse(Console.ReadLine()));
                     break;
                 case 2:
-                    alumno.Trabajos.Add(float.Parse(Console.ReadLine()));
+                    alumno.NotasTrabajos.Add(float.Parse(Console.ReadLine()));
                     break;
                 case 3:
-                    alumno.Parciales.Add(float.Parse(Console.ReadLine()));
+                    alumno.NotasParciales.Add(float.Parse(Console.ReadLine()));
                     break;
                 default:
                     Console.WriteLine("Opcion no valida");
                     Console.ReadKey();
                     break;
             }
-            int idx = estudiantes.FindIndex(p => p.Code.Equals(studenCode));
-            estudiantes[idx] = alumno;
+            return alumno;
+
         }
     }
 }
